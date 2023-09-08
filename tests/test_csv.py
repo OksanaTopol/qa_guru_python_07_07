@@ -2,7 +2,6 @@ import csv
 from conftest import RESOURCE_PATH, csv_path
 # TODO оформить в тест, добавить ассерты и использовать универсальный путь
 
-
 def test_csv():
     with open(csv_path, 'w', newline='') as csv_file:
         csvwriter = csv.writer(csv_file, delimiter=';')
